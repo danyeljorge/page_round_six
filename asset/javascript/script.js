@@ -10,10 +10,7 @@ playtBtn.addEventListener("click", () => {
 });
 
 videoYoutube.addEventListener("click", (e) => {
-  if (
-    e.target === videoYoutube ||
-    e.target.classList.contains("sobreposicao")
-  ) {
+  if (e.target === videoYoutube) {
     videoYoutube.classList.add("hidden");
     videoYoutube.style.display = "none";
     youtubeTrailer.src = "";
